@@ -1,5 +1,3 @@
-#include "TelCoColorCoderTestFunctions.h"
-
 void RunNumberToPairTests() {
   testNumberToPair(1, TelCoColorCoder::WHITE, TelCoColorCoder::BLUE);
   testNumberToPair(2, TelCoColorCoder::WHITE, TelCoColorCoder::ORANGE);

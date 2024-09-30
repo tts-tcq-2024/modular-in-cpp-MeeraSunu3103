@@ -2,6 +2,7 @@
 #include <assert.h>
 #include "TelCoColorCoderDefinitions.h"
 #include "TelCoColorCoder_GetColorFromPairNumber.h"
+#include "TelCoColorCoder_GetPairNumberFromColor.h"
 
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,

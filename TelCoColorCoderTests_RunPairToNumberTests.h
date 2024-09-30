@@ -1,4 +1,4 @@
-#include "TeleCoColorCoderTestFunctions.h"
+#include "TelCoColorCoderTestFunctions.h"
 
 void RunPairToNumberTests() {
   testPairToNumber(TelCoColorCoder::WHITE, TelCoColorCoder::BLUE, 1);

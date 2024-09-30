@@ -1,4 +1,3 @@
-#include "TelCoColorCoderDefinitions.h"
 #include "TelCoColorCoderTestFunctions.h"
 
 int main() {

@@ -1,3 +1,5 @@
+#include "TelCoColorCoderDefinitions.h"
+
 namespace TelCoColorCoder
 {
   ColorPair GetColorFromPairNumber(int pairNumber) {
@@ -5,5 +7,9 @@ namespace TelCoColorCoder
     MajorColor majorColor = (MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
     MinorColor minorColor = (MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
     return ColorPair(majorColor, minorColor);
+  }
+
+  int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
+    return major * numberOfMinorColors + minor + 1;
   }
 }

@@ -1,4 +1,4 @@
-#include "TelCoColorCoderDefinitions.h"
+#include "TelCoColorCoderFunctions.h"
 
 void BuildColorCodeReferenceManual() {
   std::cout << "\nCode\tMajor Color\tMinor Color" << std::endl;

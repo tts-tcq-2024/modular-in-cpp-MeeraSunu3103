@@ -4,6 +4,7 @@ void RunNumberToPairTests() {
     for(int outerLoopCounter = 0; outerLoopCounter < 5; ++outerLoopCounter) {
       for(int innerLoopCounter = 0; innerLoopCounter < 5; ++innerLoopCounter) {
         testNumberToPair(pairNumber, TelCoColorCoder::MajorColor(outerLoopCounter), TelCoColorCoder::MinorColor(innerLoopCounter));
+        ++pairNumber;
       }
     }
   }

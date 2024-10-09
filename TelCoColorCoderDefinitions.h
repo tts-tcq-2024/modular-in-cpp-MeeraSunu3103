@@ -33,7 +33,9 @@ namespace TelCoColorCoder
             }
     };
 
-void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor, TelCoColorCoder::MinorColor expectedMinor);
-void testPairToNumber(TelCoColorCoder::MajorColor Major, TelCoColorCoder::MinorColor Minor, int expectedPairNumber);
+ColorPair GetColorFromPairNumber(int pairNumber);
 
 }
+
+void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor, TelCoColorCoder::MinorColor expectedMinor);
+void testPairToNumber(TelCoColorCoder::MajorColor Major, TelCoColorCoder::MinorColor Minor, int expectedPairNumber);

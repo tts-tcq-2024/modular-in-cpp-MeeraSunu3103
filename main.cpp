@@ -1,12 +1,8 @@
-#include "TelCoColorCoderTestFunctions.h"
-#include "TelCoColorCoderTests_RunPairToNumberTests.h"
-#include "TelCoColorCoderTests_RunNumberToPairTests.h"
-#include "TelCoColorCoder_PrintColorCodes.h"
+#include "TelCoColorCoderDefinitions.h"
 
 int main() {
     RunNumberToPairTests();
     RunPairToNumberTests();
-    PrintColorCodes();
-
+    // PrintColorCodes();
     return 0;
 }

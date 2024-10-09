@@ -1,4 +1,4 @@
-#include "TelCoColorCoderDefinitions.h"
+#include "TelCoColorCoderFunctions.h"
 
 void RunPairToNumberTestsForEachPair(int& pairNumber) {
   for(int outerLoopCounter = 0; outerLoopCounter < 5; ++outerLoopCounter) {

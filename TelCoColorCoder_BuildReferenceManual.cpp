@@ -1,4 +1,6 @@
-void PrintColorCodes() {
+#include "TelCoColorCoderDefinitions.h"
+
+void BuildColorCodeReferenceManual() {
   std::cout << "\nCode\tMajor Color\tMinor Color" << std::endl;
   for(int pairNumber = 1; pairNumber <= 25; ++pairNumber) {
     TelCoColorCoder::ColorPair colorPair = TelCoColorCoder::GetColorFromPairNumber(pairNumber);

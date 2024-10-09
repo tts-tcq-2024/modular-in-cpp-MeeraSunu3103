@@ -12,6 +12,6 @@ void RunPairToNumberTestsForEachPair(int& pairNumber) {
 void RunPairToNumberTests() {
   int pairNumber = 1;
   while(pairNumber <= 25) {
-    RunNumberToPairTestsForEachPair(pairNumber);
+    RunPairToNumberTestsForEachPair(pairNumber);
   }
 }

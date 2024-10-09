@@ -1,5 +1,5 @@
 #include "TelCoColorCoderFunctions.h"
-#include "TeleCoColorCoderFunctions.h"
+#include "TelCoColorCoderFunctions.h"
 
 int main() {
     RunNumberToPairTests();

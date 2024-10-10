@@ -3,6 +3,6 @@
 int main() {
     RunNumberToPairTests();
     RunPairToNumberTests();
-    // PrintColorCodes();
+    RunReferenceManualTest();
     return 0;
 }

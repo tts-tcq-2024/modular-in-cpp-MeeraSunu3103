@@ -5,10 +5,10 @@ std::string BuildColorCodeReferenceManual() {
   referenceManual = "\nCode\tMajor Color\tMinor Color";
   for(int pairNumber = 1; pairNumber <= 25; ++pairNumber) {
     TelCoColorCoder::ColorPair colorPair = TelCoColorCoder::GetColorFromPairNumber(pairNumber);
-    referenceManual[pairNumber] += '\n'; 
-    referenceManual[pairNumber] += pairNumber;
-    referenceManual[pairNumber] += '\t';
-    referenceManual[pairNumber] += TelCoColorCoder::colorPair.ToString();
+    referenceManual += "\n"; 
+    referenceManual += std::to_string(pairNumber);
+    referenceManual += "\t";
+    referenceManual += colorPair.ToString();
   }
 
   return referenceManual;

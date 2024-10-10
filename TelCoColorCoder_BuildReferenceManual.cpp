@@ -1,12 +1,15 @@
 #include "TelCoColorCoderFunctions.h"
 
-void BuildColorCodeReferenceManual() {
-  std::cout << "\nCode\tMajor Color\tMinor Color" << std::endl;
+std::string BuildColorCodeReferenceManual() {
+  std::string referenceManual;
+  referenceManual = "\nCode\tMajor Color\tMinor Color";
   for(int pairNumber = 1; pairNumber <= 25; ++pairNumber) {
     TelCoColorCoder::ColorPair colorPair = TelCoColorCoder::GetColorFromPairNumber(pairNumber);
-    std::cout << pairNumber;
-    std::cout << "\t" << TelCoColorCoder::MajorColorNames[colorPair.getMajor()];
-    std::cout << "\t\t" << TelCoColorCoder::MinorColorNames[colorPair.getMinor()];
-    std::cout << std::endl;
+    referenceManual[pairNumber] += '\n'; 
+    referenceManual[pairNumber] += pairNumber;
+    referenceManual[pairNumber] += '\t';
+    referenceManual[pairNumber] += TelCoColorCoder::colorPair.ToString();
   }
+
+  return referenceManual;
 }

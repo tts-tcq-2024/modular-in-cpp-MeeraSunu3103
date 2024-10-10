@@ -32,6 +32,6 @@ namespace TelCoColorCoder
 std::string BuildColorCodeReferenceManual();
 void RunNumberToPairTests();
 void RunPairToNumberTests();
-void RunRefernceManualTest();
+void RunReferenceManualTest();
 void testNumberToPair(int pairNumber, TelCoColorCoder::MajorColor expectedMajor, TelCoColorCoder::MinorColor expectedMinor);
 void testPairToNumber(TelCoColorCoder::MajorColor Major, TelCoColorCoder::MinorColor Minor, int expectedPairNumber);

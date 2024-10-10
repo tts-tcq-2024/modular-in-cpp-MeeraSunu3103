@@ -1,7 +1,8 @@
+#include "TelCoColorCoderFunctions.h"
+
 void RunNumberToPairTestsForEachPair(int& pairNumber) {
   for(int outerLoopCounter = 0; outerLoopCounter < 5; ++outerLoopCounter) {
     for(int innerLoopCounter = 0; innerLoopCounter < 5; ++innerLoopCounter) {
-      printf("%d %d %d : ", pairNumber,outerLoopCounter,innerLoopCounter);
       testNumberToPair(pairNumber, (TelCoColorCoder::MajorColor)outerLoopCounter, (TelCoColorCoder::MinorColor)innerLoopCounter);
       ++pairNumber;
     }
